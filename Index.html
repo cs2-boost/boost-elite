@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boost Elite - CS2 Boost</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">  <header class="bg-black p-6 text-center">
+    <img src="logo.png" alt="Boost Elite Logo" class="mx-auto w-40 mb-3">
+    <h1 class="text-3xl font-bold">BOOST ELITE</h1>
+    <p class="text-gray-400">CS2 Rank Boosting Service</p>
+  </header>  <section class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Urcă rapid în rank!</h2>
+    <p class="text-gray-400">Servicii rapide, sigure și profesionale</p>
+  </section>  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+    <div class="bg-gray-800 rounded-2xl p-4 text-center">
+      <h3 class="text-xl font-bold">Silver → Gold</h3>
+      <p class="text-green-400 font-bold mt-2">€25</p>
+      <button onclick="order('Silver → Gold - €25')" class="bg-green-500 text-black px-4 py-2 mt-3 rounded-xl w-full">Comandă</button>
+    </div><div class="bg-gray-800 rounded-2xl p-4 text-center">
+  <h3 class="text-xl font-bold">Gold → AK</h3>
+  <p class="text-green-400 font-bold mt-2">€50</p>
+  <button onclick="order('Gold → AK - €50')" class="bg-green-500 text-black px-4 py-2 mt-3 rounded-xl w-full">Comandă</button>
+</div>
+
+<div class="bg-gray-800 rounded-2xl p-4 text-center">
+  <h3 class="text-xl font-bold">AK → Global</h3>
+  <p class="text-green-400 font-bold mt-2">€120</p>
+  <button onclick="order('AK → Global - €120')" class="bg-green-500 text-black px-4 py-2 mt-3 rounded-xl w-full">Comandă</button>
+</div>
+
+  </section>  <section class="p-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">Plată</h2>
+    <a href="https://www.paypal.me/USERNAME" target="_blank" class="bg-blue-500 px-6 py-3 rounded-xl">Plătește cu PayPal</a>
+  </section>  <section class="p-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <a href="https://wa.me/40700000000" target="_blank" class="bg-green-500 px-6 py-3 rounded-xl text-black">Scrie pe WhatsApp</a>
+  </section>  <footer class="bg-black text-center p-4 mt-6">
+    © 2026 Boost Elite
+  </footer>  <script>
+    function order(service) {
+      const phone = '40700000000';
+      const message = encodeURIComponent('Salut! Vreau ' + service);
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    }
+  </script></body>
+</html>
